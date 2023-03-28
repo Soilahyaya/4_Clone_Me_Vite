@@ -1,0 +1,690 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+/* navbar header */
+/* alignement nav bar partie logo et barre de recherche */
+header {
+    position: sticky;
+    top:0;
+}
+
+.groupe1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.groupe1 p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.groupe1 p:hover {
+    color: #858586;
+    transition: .3s;
+    font-weight: 900;
+}
+
+
+.groupe1 img {
+    height: 30px;
+}
+
+.groupe1:hover img {
+    opacity: .5;
+}
+
+/* alignement nav bar partie reste*/
+.groupe2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navViolet li {
+    margin-right: 15px;
+}
+
+.navGris li {
+    margin-right: 20px;
+}
+
+.navGris2 {
+    margin-right: 10px;
+}
+
+.dark {
+    margin-right: 15px;
+}
+
+/* partie contact reseaux */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+background-color: #213547;
+}
+
+.twitter {
+    font-size: 20px;
+}
+
+.twitter i {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+nav i:hover {
+    opacity: .5;
+    color: #213547;
+
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav ul li a {
+    color: #213547;
+    text-decoration: none;
+}
+
+ul.navViolet :hover {
+    color: #646cff;
+    transition: .3s;
+}
+
+ul.navGris :hover {
+    color: #858586;
+    transition: .3s;
+}
+
+ul.navGris2 :hover {
+    color: #858586;
+    transition: .3s;
+}
+
+/* separations */
+.sep {
+    background-color: rgba(153, 151, 151, 0.26);
+    width: 1px;
+    height: 25px;
+    margin-right: 20px;
+
+}
+
+.sep2 {
+    background-color: rgba(153, 151, 151, 0.26);
+    width: 0.9px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.sep3 {
+    background-color: rgba(153, 151, 151, 0.26);
+    width: 0.9px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+/* boutton dark  */
+.dark {
+    position: relative;
+
+    width: 40px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50px;
+    border: 1px solid rgb(153, 151, 151);
+}
+
+ul.dark:hover {
+    background-color: #c2c0c0;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+
+.btnDark {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    border: 1px solid #d2d2d2;
+    opacity: 0;
+}
+
+.btn:checked~.btnDark {
+    opacity: 1;
+}
+
+.ballDark {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid rgb(168, 164, 164);
+    background-color: white;
+    left: 1px;
+    box-shadow: 2px #d2d2d2;
+    transition: 0.3s;
+}
+
+.btn:checked~.ballDark {
+    left: 20px;
+}
+
+#search {
+    border-radius: 9px;
+    border: 0px solid;
+    height: 35px;
+    width: 70px;
+    background-color: transparent;
+
+}
+
+.searchbar input {
+    border: 1px solid transparent;
+    background-color: rgba(159, 159, 159, 0.082);
+    outline: none;
+
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: rgba(159, 159, 159, 0.082);
+    border-radius: 10px;
+
+}
+
+.searchbar:hover {
+    border: 1px solid #646cff;
+    transition: .3s;
+}
+
+.searchbar i {
+    height: 1px;
+    color: #85858677;
+    padding: 0.4rem;
+}
+
+.ctrl {
+    padding-right: 10px;
+}
+
+.ctrl p {
+    font-size: 10px;
+    color: #858586ab;
+    border: 1px solid rgba(138, 138, 138, 0.411);
+    border-radius: 15%;
+    padding: 2px;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.781);
+    height: 35px;
+}
+
+
+/* main page 1 */
+.page1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.titre h1 span {
+    color: blueviolet;
+    font-size: 60px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #91a1fd, #9744d6);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titre h1 {
+    color: #213547;
+    font-size: 60px;
+    width: 600px;
+    font-weight: 900;
+}
+
+.titre p {
+    color: rgba(126, 124, 124, 0.966);
+    font-size: 20px;
+    width: 500px;
+    font-weight: 800;
+}
+
+
+.fond img {
+    height: 320px;
+    filter: drop-shadow(50px 90px 60px #d091fd) drop-shadow(90px -20px 60px #d091fd) drop-shadow(-90px -50px 60px #6ecffc);
+
+}
+
+.fond {
+    z-index: -1;
+}
+
+.boutton {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.boutton button {
+    border-radius: 35px;
+    height: 40px;
+    width: 120px;
+    font-size: 13px;
+}
+
+.bouttonBleu {
+    background-color: #646cff;
+    color: white;
+}
+
+button {
+    width: 150px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #b8b3b341;
+}
+
+/* block de 6 */
+main .page2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.haut,
+.bas {
+    display: flex;
+}
+
+.page2 h2 {
+    display: flex;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.page2 p {
+    font-size: 12px;
+    display: flex;
+    color: rgba(126, 124, 124, 0.966)
+}
+
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6 {
+    background-color: rgba(159, 159, 159, 0.082);
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 90px;
+    margin: 10px;
+}
+
+.text2 i{
+    color: rgba(126, 124, 124, 0.459);
+    font-size: 30px;
+}
+
+.text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text2 p {
+    font-size: 15px;
+    color: rgba(126, 124, 124, 0.966)
+}
+
+.text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text3 p {
+    font-size: 15px;
+    color: rgba(126, 124, 124, 0.966)
+}
+
+/* page 3 */
+main .page3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tab1 {
+    background-color: rgba(159, 159, 159, 0.082);
+    width: 1150px;
+    height: 60px;
+    margin: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tab2 {
+    display: flex;
+}
+
+.spons1,
+.spons2 {
+    background-color: rgba(159, 159, 159, 0.082);
+    width: 573px;
+    height: 100px;
+    margin: 2px;
+    display: flex;
+}
+
+.tab3 {
+    background-color: rgba(159, 159, 159, 0.082);
+    width: 1150px;
+    height: 60px;
+    margin: 2px;
+}
+
+.tab1,
+.tab3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab1,
+.tab3 p {
+    font-size: 15px;
+    color: rgba(126, 124, 124, 0.966);
+    font-weight: 800
+}
+
+.tab4 {
+    display: flex;
+}
+
+.spons3,
+.spons4,
+.spons5,
+.spons6,
+.spons7 {
+    background-color: rgba(159, 159, 159, 0.082);
+    width: 227px;
+    height: 100px;
+    margin: 2px;
+    display: flex;
+}
+
+.tab5 {
+    display: flex;
+}
+
+.spons8,
+.spons9,
+.spons10,
+.vide1,
+.vide2 {
+    background-color: rgba(159, 159, 159, 0.082);
+    width: 227px;
+    height: 100px;
+    margin: 2px;
+    display: flex;
+}
+
+.spons8 {
+    border-bottom-left-radius: 10px;
+}
+
+.vide2 {
+    border-bottom-right-radius: 10px;
+}
+
+.spons1:hover,
+.spons2:hover,
+.spons3:hover,
+.spons4:hover,
+.spons5:hover,
+.spons6:hover,
+.spons7:hover,
+.spons8:hover,
+.spons9:hover,
+.spons10:hover {
+    transition: .3s;
+    cursor: pointer;
+    background-color: rgb(199, 198, 198);
+}
+
+
+.boutton2 {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.boutton2 button {
+    border-radius: 35px;
+    height: 40px;
+    width: 120px;
+    font-size: 13px;
+}
+
+.bouttonRose {
+    background-color: white;
+    border: 1px solid #85858670;
+    color: #858586;
+}
+
+.bouttonRose:hover {
+    color: #FD1D7C;
+    border: 1px solid #FD1D7C;
+    transition: .3s;
+}
+
+
+.page3 button {
+    width: 150px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+hr {
+    color: rgba(159, 159, 159, 0.301);
+}
+
+/* espacement entre les div */
+.hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text2{
+    padding-bottom: 20px;
+}
+.boutton2{
+    margin-bottom: 50px;
+}
+.text3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.page1{
+    padding-top: 100px;
+    padding-right: 250px;
+}
+
+/*------------------------------------ partie mobile ----------------------------------------------------------- */
+@media screen and (max-width: 768px){
+
+nav{
+    display: none;
+
+}
+/* ordre */
+/* header {
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.page1 div:nth-child(1) {
+order: 0;
+} */
+
+.page1{
+flex-direction: column-reverse;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.page1{
+    padding-right: 0px;
+    padding-top:0px ;
+}
+
+/* paramètre text */
+.titre h1{
+    font-size: 20px;
+    width: 200px;
+}
+
+.titre h1 span{
+    font-size: 20px;
+  
+}
+
+.titre p{
+    font-size: 10px;
+    width: 200px;
+}
+
+/* paramètre image */
+.fond img {
+    width: 200px;
+    height: 200px;
+}
+
+.boutton{
+    display: flex;
+}
+.button_resp{
+    display: flex;
+    
+}
+
+.boutton button{
+    width: 100px;
+    height: 30px;
+    font-size: 10px;  
+}
+
+footer .text3 p {
+    font-size: 10px;
+}
+
+nav{
+    border: solid 1px  rgba(159, 159, 159, 0.301) ;
+}
+
+
+.block1,.block2,.block3,.block4,.block5,.block6{
+    width: 70%;
+    height: 30px;
+    
+}
+
+.spons1,
+.spons2,.tab1,.tab3,.spons3,
+.spons4,
+.spons5,
+.spons7,
+.spons6,
+.spons8,
+.spons9,
+.spons10,
+.vide1,
+.vide2 {
+    
+    width: 300px;
+    
+}
+}
+
+/* -------------------------------------------- */
+/* mode dark */
+.active nav{
+    background-color: #08070e;
+}
+
+.active{
+    background: #08070e;
+}
+
+.active h1{
+    color: white;
+}
+.active  button{
+    color: white;
+}
+.active  a{
+    color: white;
+}
+.active  h2{
+    color: white;
+}
+
+.active .bouttonRose{
+    background-color: #000000;
+}
